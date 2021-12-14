@@ -34,10 +34,6 @@ let newColor = {
 
 newElem.addEventListener('submit',(evnt)=>{
     evnt.preventDefault();
-  //  console.dir(evnt);
-    // console.log(req.red.value);
-    // console.log(req.green.value);
-    // console.log(req.blue.value);
 
     let r = req.red.value;
     let g=  req.green.value;
@@ -55,6 +51,7 @@ let dispColor=()=>{
     console.log("alfskn")
     let displ = document.getElementById("displayDiv");
     displ.style.backgroundColor = newColor.retColor();
+    displ.style.color = "silver";
 
 }
 
